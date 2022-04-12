@@ -7,877 +7,819 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <title>Short CSS</title>
 </head>
 
 <body>
 
+
   <div class="container">
+
+    <!-- Header -->
     <header class="header">
-      <div class="header__title">Short CSS</div>
+      <h1 class="header__title">Short CSS</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="javascript:void(0);">HTML</a>
+            <ul class="header__submenu">
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="javascript:void(0);">CSS</a>
+            <ul class="header__submenu">
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="javascript:void(0);">JAVASCRIPT</a>
+            <ul class="header__submenu">
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+              <li class="header__submenu-list"><a class="header__submenu-link" href="javascript:void(0);">Выпадающий
+                  список</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
     </header>
+
+    <!-- Main -->
     <main class="main">
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Центрирование блока: position</h3>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
-                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
-                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
-                </svg>
-              </div>
-            </div>
-            <pre class="section__css">
-            position: relative;
-            </pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-               </pre>
-            <pre class="section__code">}</pre>
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent p-r">
-              <div class="section__child p-a">.child</div>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Центрирование блока: Flexbox Layout</h3>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
-                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
-                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
-                </svg>
-              </div>
-            </div>
-            <pre class="section__css">
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
+      <div class="content">
 
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent d-f">
-              <div class="section__child">.child</div>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Центрирование блока: Grid Layout</h3>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
-                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
-                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
-                </svg>
-              </div>
-            </div>
-            <pre class="section__css">
-              display: grid;
-              place-items: center;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
+        <!-- Селекторы -->
 
-               </pre>
-            <pre class="section__code">}</pre> -->
+        <section class="section" id="selectors">
+          <div class="section__header">
+            <h3 class="section__title">Универсальный CSS селектор *</h3>
+            <h4 class="section__subtitle">стилизует все элементы на странице</h4>
           </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent d-g">
-              <div class="section__child">.child</div>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Центрирование блока: Grid Layout / margin</h3>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;html&gt;</code>
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;&lt;/body&gt;
+<code class="section__code">&lt;/html&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              display: grid;
-            </pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-              margin: auto;
-               </pre>
-            <pre class="section__code">}</pre>
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent d-g2">
-              <div class="section__child m-a">.child</div>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Универсальный CSS селектор *</h3>
-          <h4 class="section__subtitle">стилизует все элементы на странице</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent * {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">* {</code>
+ padding: 0;
+ margin: 0;
+ border: 0;
+ box-sizing: border-box;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              box-sizing: border-box;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-              margin: auto;
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent">
-              <div class="section__child d-inl">.child</div>
+            <div class="section__result p-0">
+              <pre class="section__intro">&lt;div&gt;&lt;/div&gt;</pre>
             </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Контекстный селектор</h3>
-          <h4 class="section__subtitle">в блоке с классом parent стилизует элемент с классом child через пробел</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent .child {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <section class="section" id="selectors">
+          <div class="section__header">
+            <h3 class="section__title">Соседний селектор +</h3>
+            <h4 class="section__subtitle">позволяет выбрать самый первый элемент, который идет сразу после
+              указанного
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: yellowgreen;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-              margin: auto;
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent parent">
-              <div class="section__child child">.child</div>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Комбинация селекторов</h3>
-          <h4 class="section__subtitle">выберет элемент по тегу div внутри блока parent</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent div {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.child + div {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: lightskyblue;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-              margin: auto;
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent p-1">
-              <div class="section__child d-inl">.child</div>
+            <div class="section__result">
+              <pre class="section__intro c-1">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+              <pre class="section__intro">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+              <pre class="section__intro">&lt;div class="child"&gt;&lt;/div&gt;</pre>
             </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Еще про комбинацию селекторов</h3>
-          <h4 class="section__subtitle">.parent.active — блок .parent имеет класс .active</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent.active {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <section class="section" id="selectors">
+          <div class="section__header">
+            <h3 class="section__title">Селектор прямого потомка ></h3>
+            <h4 class="section__subtitle">позволяет выбрать все элементы, которые являются прямыми
+              потомками указанного блока, на первом уровне вложенности
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: aliceblue;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-              margin: auto;
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent p-2 active">
-              <!-- <div class="section__child d-inl">.child</div> -->
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">И еще про комбинацию селекторов</h3>
-          <h4 class="section__subtitle">.parent(пробел).active — внутри блока .parent, есть элемент и
-            он
-            имеет класс .active</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent .active {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent > div {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: deeppink;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-              margin: auto;
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent p-3">
-              <div class="section__child a-1">.child</div>
+            <div class="section__result p-1">
+              <pre class="section__intro">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+              <pre class="section__intro">&lt;div class="child"&gt;&lt;/div&gt;</pre>
             </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Соседний селектор +</h3>
-          <h4 class="section__subtitle">позволяет выбрать самый первый элемент, который идет сразу после указанного</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.child + div {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <section class="section" id="selectors">
+          <div class="section__header">
+            <h3 class="section__title">Селектор комбинатор ~</h3>
+            <h4 class="section__subtitle">выберет все элементы после
+              указанного (кроме первого — все, кроме указанного). Т.е
+              внутри блока .parent, есть
+              элемент .child и после него него выбираем все элементы по тэгу.
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;/div&gt;
+ &lt;input type="text"&gt;
+ &lt;div&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: blueviolet;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.child {</pre>
-            <pre class="section__css">
-              margin: auto;
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent">
-              <div class="section__child plus">.child (указанный элемент)</div>
-              <div class="section__child">.div</div>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Селектор прямого потомка ></h3>
-          <h4 class="section__subtitle">позволяет выбрать все элементы, которые являются прямыми
-            потомками<br> указанного блока, на первом уровне вложенности
-          </h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent > tag {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.child ~ div {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: darkcyan;
-            </pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.parent > * {</pre>
-            <pre class="section__css">
-              background-color: darkcyan;
-               </pre>
-            <pre class="section__code">}</pre>
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent p-4">
-              <div class="section__child c-1">tag</div>
-              <div class="section__child c-1">tag</div>
+            <div class="section__result p-2">
+              <pre class="section__intro c-2">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+              <pre class="section__intro">&lt;div&gt;&lt;/div&gt;</pre>
+              <code class="section__intro"> &lt;input type="text"&gt;</code>
+              <pre class="section__intro">&lt;div&gt;&lt;/div&gt;</pre>
             </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Селектор комбинатор ~</h3>
-          <h4 class="section__subtitle">выберет все элементы после
-            указанного (кроме первого — все, кроме указанного), расположенные на первом уровне вложенности. Т.е
-            внутри блока .parent, есть
-            элемент .child И после него него выбираем все елементы с каким-либо тэгом.
-          </h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent .child ~ tag {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <section class="section" id="selectors">
+          <div class="section__header">
+            <h3 class="section__title">Контекстный селектор</h3>
+            <h4 class="section__subtitle">в блоке с классом parent стилизует элемент с классом child через пробел
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: orangered;
-            </pre>
-            <pre class="section__code">}</pre>
-            <!-- <pre class="section__code">.parent > * {</pre>
-            <pre class="section__css">
-              background-color: var(--someColor);
-               </pre>
-            <pre class="section__code">}</pre> -->
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent p-5">
-              <div class="section__child c-2">.child</div>
-              <div class="section__child">tag</div>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">CSS селекторы :not(selector) и :nth-child()</h3>
-          <h4 class="section__subtitle">Псевдокласс отрицания, если вам нужно выбрать все элементы кроме тех,
-            которые соответствую указанному условию
-          </h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.parent > :not(:nth-child(1)) {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent .child {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              background-color: lemonchiffon;
-            </pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.parent :nth-child(1) {</pre>
-            <pre class="section__css">
-              background-color: chartreuse;
-               </pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.child:last-child {</pre>
-            <pre class="section__css">
-                background-color: cornflowerblue;
-                 </pre>
-            <pre class="section__code">}</pre>
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent p-6">
-              <div class="section__child p-7">child</div>
-              <div class="section__child p-7">child</div>
-              <div class="section__child p-7">child</div>
+            <div class="section__result p-3">
+              <pre class="section__intro c-3">&lt;div class="child"&gt;&lt;/div&gt;</pre>
             </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">CSS селектор :checked</h3>
-          <h4 class="section__subtitle">выбирает только выбранные чекбоксы и радио
-            кнопки
-          </h4>
-          <h4 class="section__subtitle">input[type="checkbox"]:checked + label
-          </h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.class:checked + label {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <!-- Селекторы атрибутов -->
+
+        <section class="section" id="attribute">
+          <div class="section__header">
+            <h3 class="section__title">Селектор атрибутов</h3>
+            <h4 class="section__subtitle">выберет все элементы, у которых присутствует указанный атрибут
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;a href="javascript:void(0);"&gt;&lt;/a&gt;
+ &lt;input type="text"&gt;
+ &lt;img src="" alt=""&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
-              color: cornsilk;
-            </pre>
-            <pre class="section__code">}</pre>
-          </div>
-          <div class="section__column">
-            <pre class="section__code">
-            &lt;div class="parent"
-           </pre>
-            <div class="section__parent">
-              <input type="checkbox" id="checkbox">
-              <label for="checkbox">Checkbox</label>
-            </div>
-            <pre class="section__code">
-              &lt;/div&gt;
-             </pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Селекторы атрубутов</h3>
-          <h4 class="section__subtitle">выберет все элементы, у которых присутствует указанный атрибут
-          </h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">a[title] {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">a:link {</code>
+ text-decoration: none;
+<code class="section__code">}</code>
+<code class="section__code">input[type="text"] {</code>
+ font-family: inherit;
+<code class="section__code">}</code>
+<code class="section__code">img[src$=".jpg"] {</code>
+ max-width: 100%;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">background-color: red;</pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">a[href*="some-url"] {</pre>
-            <pre class="section__css">background-color: red;</pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">input[type="text"] {</pre>
-            <pre class="section__css">background-color: red;</pre>
-            <pre class="section__code">}</pre>
+            <div class="section__result">
+              <pre class="section__intro">&lt;a href=""&gt;&lt;/a&gt;</pre>
+              <pre class="section__intro">&lt;input type="text"&gt;</pre>
+              <pre class="section__intro">&lt;img src="" alt=""&gt;</pre>
+            </div>
           </div>
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">span[name="value"] {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <!-- Комбинация -->
+
+        <section class="section" id="combination">
+          <div class="section__header">
+            <h3 class="section__title">Комбинация селекторов</h3>
+            <h4 class="section__subtitle">блок .parent имеет класс .active</h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">background-color: red;</pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">img[src$=".jpg"] {</pre>
-            <pre class="section__css">background-color: red;</pre>
-            <pre class="section__code">}</pre>
-            <pre class="section__code">a[data-link="value"] {</pre>
-            <pre class="section__css">background-color: red;</pre>
-            <pre class="section__code">}</pre>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">CSS переменные</h3>
-          <h4 class="section__subtitle">объявление CSS переменных</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">:root {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent.active {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css">
---primaryColor: #665c84;
---secondaryColor: #fbeed7;
---accessoryColor: #ff7657;
---borderRadius: 0.5rem;
---titleFontSize: clamp(1.8rem, 2vw + 1rem, 4rem);
---textFontSize: clamp(1.2rem, 1vw + 1rem, 1.8rem);
-            </pre>
-            <pre class="section__code">}</pre>
+            <div class="section__result p-4">
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Tooltip</h3>
-          <h4 class="section__subtitle">Подсказка при наведении курсора мыши</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.tooltip {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <section class="section" id="combination">
+          <div class="section__header">
+            <h3 class="section__title">Комбинация селекторов</h3>
+            <h4 class="section__subtitle">выберет элемент(ы) по тегу div внутри блока parent</h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css section__css--hidden">
-              background-color: #4291ac;
-              border-radius: 0.5rem;
-              color: #fff;
-              padding: 1rem 1.5rem;
-              font-size: 1.8rem;
-              position: relative;
-              cursor: default;
-              &::before,
-              &::after {
-                --scale: 0;
-                position: absolute;
-                top: -1.8rem;
-                left: 50%;
-                transform: translateX(-50%) translateY(-100%) scale(var(--scale));
-                transition: 250ms transform;
-                transform-origin: bottom center;
-              }
-              &::before {
-                content: attr(data-prompt);
-                width: max-content;
-                max-width: 250%;
-                background-color: #d8d8d3;
-                color: #646464;
-                padding: 1.2rem;
-                border-radius: var(--borderRadius);
-                font-size: 1.4rem;
-              }
-              &:hover::before,
-              &:hover::after {
-                --scale: 1;
-              }
-              &:hover::after {
-                content: "";
-                width: 1.7rem;
-                height: 1.7rem;
-                background-color: #d8d8d3;
-                border-radius: 0.5rem;
-                top: -3rem;
-                transform: translateX(-100%) rotate(45deg);
-              }
-            }
-              .parent-tooltip {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            <pre class="section__code">}</pre>
-          </div>
-          <div class="section__column">
-            <div class="section__parent parent-tooltip">
-              <div class="tooltip"
-                data-tooltip="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa dolores voluptatum debitis, enim quibusdam accusantium. Ad maiores eveniet repellendus. Adipisci.">
-                Tooltip</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Grid Layout</h3>
-          <h4 class="section__subtitle">сетка сайта на Grid Layout</h4>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__code">.container {</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent div {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
-            <pre class="section__css section__css--hidden">
-              display: grid;
-              grid-template-columns: 1fr;
-              grid-template-rows: minmax(6rem, auto) 1fr minmax(6rem, auto);
-              grid-template-areas:
-                "header"
-                "main"
-                "footer";
-              row-gap: 3rem;
-              min-height: 100%;
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.header {</pre>
-            display: grid;
-            grid-area: header;
-            background-color: lightcoral;
-            padding: 2rem;
-            grid-template-columns: 1fr minmax(auto, 144rem) 1fr;
-            &__row {
-            grid-column: 2 / 3;
-            }
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.main {</pre>
-            display: grid;
-            grid-area: main;
-            grid-template-columns: 1fr minmax(auto, 144rem) 1fr;
-            column-gap: 1.5rem;
-            row-gap: 3rem;
-            background-color: chartreuse;
-            <pre class="section__code">}</pre>
-            <pre class="section__code">.footer {</pre>
-            display: grid;
-            grid-area: footer;
-            grid-template-columns: 1fr minmax(auto, 144rem) 1fr;
-            column-gap: 1.5rem;
-            padding: 2rem;
-            background-color: cornflowerblue;
-            &__row {
-            grid-column: 2 / 3;
-            }
-            <pre class="section__code">}</pre>
+            <div class="section__result p-5">
+              <pre class="section__intro">&lt;div&gt;&lt;/div&gt;</pre>
+              <pre class="section__intro">&lt;div&gt;&lt;/div&gt;</pre>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__header">
-          <h3 class="section__title">Вместо # в ссылке</h3>
-        </div>
-        <div class="section__row">
-          <div class="section__column">
-            <div class="section__copy">
-              <pre class="section__css">"javascript:void(0);"</pre>
-              <div class="section__svg" title="Copy">
-                <svg class="section__icon" width="30px" height="30px" viewBox="0 0 24 24"
+        </section>
+
+        <!-- Псевдоклассы -->
+
+        <section class="section" id="pseudo">
+          <div class="section__header">
+            <h3 class="section__title">Псевдокласс отрицания</h3>
+            <h4 class="section__subtitle">если вам нужно выбрать все элементы кроме тех,
+              которые соответствую указанному условию
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" fill="#fbeed7"
+                  <path fill-rule="evenodd" fill="#494949"
                     d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
-                  <path fill="#fbeed7"
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent > :not(:nth-child(1)) {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__result p-6">
+              <pre class="section__intro">&lt;div&gt;&lt;/div&gt;</pre>
+              <pre class="section__intro">&lt;div&gt;&lt;/div&gt;</pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="pseudo">
+          <div class="section__header">
+            <h3 class="section__title">Псевдокласс :nth-child()</h3>
+            <h4 class="section__subtitle">находит один или более элементов, основываясь на их позиции среди группы
+              соседних элементов
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+ &lt;div class="child"&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.child :nth-child(2) {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__result">
+              <pre class="section__intro c-4">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+              <pre class="section__intro c-4">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="pseudo">
+          <div class="section__header">
+            <h3 class="section__title">Псевдокласс :checked</h3>
+            <h4 class="section__subtitle">выбирает только выбранные чекбоксы и радио
+              кнопки
+            </h4>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;input type="checkbox" id="checkbox"&gt;
+ &lt;label for="checkbox">checkbox&lt;/label&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">input[type="checkbox"]:checked + label {</code>
+ background-color: #73e16c;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
                     d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
                 </svg>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- Центрирование блока -->
+
+        <section class="section" id="centered">
+          <div class="section__header">
+            <h3 class="section__title">Центрирование блока: position</h3>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent {</code>
+ position: relative;
+<code class="section__code">}</code>
+<code class="section__code">.child {</code>
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__result p-7">
+              <pre class="section__intro c-5">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="centered">
+          <div class="section__header">
+            <h3 class="section__title">Центрирование блока: Flexbox Layout</h3>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent {</code>
+ display: flex;
+ align-items: center;
+ justify-content: center;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard"">
+                <svg class=" section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" fill="#494949"
+                  d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                <path fill="#494949"
+                  d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__result p-8">
+              <pre class="section__intro">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="centered">
+          <div class="section__header">
+            <h3 class="section__title">Центрирование блока: Grid Layout</h3>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent {</code>
+ display: grid;
+ place-items: center;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__result p-9">
+              <pre class="section__intro">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="centered">
+          <div class="section__header">
+            <h3 class="section__title">Центрирование блока: Grid Layout / margin</h3>
+          </div>
+          <div class="section__row">
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">&lt;div class="parent"&gt;</code>
+ &lt;div class="child"&gt;&lt;/div&gt;
+<code class="section__code">&lt;/div&gt;</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__column">
+              <pre class="section__html">
+<code class="section__code">.parent {</code>
+ display: grid;
+<code class="section__code">}</code>
+<code class="section__code">.child {</code>
+ margin: auto;
+<code class="section__code">}</code>
+</pre>
+              <div class="section__copy" data-tooltip="copy to clipboard">
+                <svg class="section__svg" width="30px" height="30px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" fill="#494949"
+                    d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z" />
+                  <path fill="#494949"
+                    d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z" />
+                </svg>
+              </div>
+            </div>
+            <div class="section__result p-10">
+              <pre class="section__intro c-6">&lt;div class="child"&gt;&lt;/div&gt;</pre>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Navbar -->
+      <aside class="navbar">
+        <nav class="navbar__column">
+          <ul class="navbar__menu">
+            <li class="navbar__menu-item">
+              <a class="navbar__menu-link navbar__menu-link--active" href="#selectors">CSS селекторы</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a class="navbar__menu-link" href="#attribute">Селекторы атрибутов</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a class="navbar__menu-link" href="#combination">Комбинация селекторов</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a class="navbar__menu-link" href="#pseudo">Псевдоклассы</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a class="navbar__menu-link" href="#centered">Центрирование блока</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
     </main>
+
+    <!-- Footer -->
+
     <footer class="footer">
       <div class="footer__content">
         <span class="footer__text">¯\_(ツ)_/¯</span>
       </div>
     </footer>
+    <button class="up" id="up">
+      <span class="up__arrow"></span>
+    </button>
   </div>
   <script src="script.js"></script>
 </body>
